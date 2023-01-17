@@ -15,10 +15,8 @@ def div(*args):
         arg1 = 10
         arg2 = 0
         res = arg1 / arg2
-    except ValueError:
-        return 'Value error'
-    except ZeroDivisionError:
-        return "Wrong devider! You can't use zero as a devider"
+        print("Wrong number! Devider can't be null")
+
 
     return res
 print(f'result  {div()}')
@@ -35,4 +33,9 @@ def div(*args):
         arg1 = 10
         arg2 = 10
         res = arg1 / arg2
+    except ValueError:
+        return 'Value error'
+    except ZeroDivisionError:
+        return "Wrong devider! You can't use zero as a devider"
+
     print(f"Результат деления 10 на 10: {int(res)}")
